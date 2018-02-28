@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Алексей Литвиновский](https://up.htmlacademy.ru/htmlcss/20/user/585957).
-* Наставник: `Неизвестно`.
+* Наставник: [Владислав Балабанович](https://htmlacademy.ru/profile/balabanovich).
 
 ---
 
