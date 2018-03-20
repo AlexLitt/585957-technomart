@@ -1,0 +1,226 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 17px;
+  font-weight: normal;
+  line-height: 17px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.top-header a,
+.search
+{
+  font-size: 17px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+
+.top-header {
+  background-color: #293449;
+  width: 100%
+}
+
+.middle-header {
+  background-color: #f3f7f8;
+}
+
+.header-slogan  {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+  color: #ef505b;
+}
+
+.header-phone  {
+  font-size: 21px;
+  line-height: 21px;
+  color: #ef505b;
+}
+
+.header-address  {
+  font-size: 14px;
+  line-height: 24px;
+  color: 99a3b0;
+}
+
+.header-user-block a{
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.bot-header-list li{
+  display: inline-block;
+  background-color: #32425c;
+}
+
+.bot-header  {
+  background-color: #f3f7f8;
+}
+
+.bot-header-list a {
+  font-size: 17px;
+  line-height: 17px;
+  color: #d6d9de;
+}
+
+
+li {
+  list-style: none;
+}
+
+.catalog-headline h3 {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.catalog-link a {
+  font-size: 14px;
+  line-height:18px;
+}
+
+.slider-headline h3 {
+  font-size: 36px;
+  line-height:36px;
+}
+
+.slider-text p {
+  font-size: 18px;
+  line-height:24px;
+}
+
+.bestseller-container-headline  {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.bestseller-container-link  {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.bestseller-container {
+  background-color:#f9f5f0;
+}
+
+.catalog-item-headline h3 {
+  font-family: "PTSans";
+  font-size: 18px;
+  line-height:20px;
+}
+
+.catalog-item-price  {
+  font-family: "PTSans";
+  font-size: 17px;
+  line-height: 18px;
+  text-decoration: line-through;
+  color:#a9a9a9;
+}
+
+.catalog-item-price-new  {
+  font-family: "PTSans";
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.producers-container-headline {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.producers-container-link {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.producers-container {
+  background-color:#f9f5f0;
+}
+
+.service {
+  background-color: #f4f7f9;
+}
+
+.service-headline {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.delivery-headline,
+.guarantee-headline,
+.credit-headline,
+.company-info-headline {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.top-footer {
+background-color: #32425c;
+}
+
+.footer-info p{
+  font-size: 18px;
+  line-height: 24px;
+  color: #f3f7f9;
+}
+
+.footer-list a{
+  font-size: 18px;
+  line-height: 24px;
+  color: #f3f7f9;
+}
+
+.footer-list-second a{
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffd180;
+}
+
+.bot-footer {
+background-color:#293449;
+}
+
+.copyright {
+  font-size: 16px;
+  line-height: 18px;
+  color: #f3f7f9;
+}
+
+.feed-back p {
+  font-size: 16px;
+  line-height: 18px;
+  color: #f3f7f9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
