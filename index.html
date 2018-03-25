@@ -4,20 +4,18 @@
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i%7CPT+Sans:400,400i&amp;subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.css">
 </head>
 <body>
-  <header class="main-header">
+<header class="main-header">
   <section class="top-header">
+   <div class="top-header-center">
    <div class="header-container">
-    <a class="header-logo">
-      <img src="#" class="logo" alt="logo">
-    </a>
+    <p class="header-logo-text"><a href="index.html">Техномарт</a></p>
     <div class="search">
       <input type="search" placeholder="Поиск">
     </div>
-    <div class="top-header-block">
       <div class="tab-container">
         <a href="#" class="tab-link">Закладки:0</a>
       </div>
@@ -27,22 +25,27 @@
       <div class="order-container">
         <a href="#" class="order-link">Оформить заказ</a>
       </div>
-    </div>
+      </div>
     </div>
   </section>
-  <section class="middle-header">
-    <p class="header-slogan">Интернет-магазин <br> строительных материалов и инструментов для ремонта</p>
+  <section class="middle-header-section">
+    <div class="middle-header-center">
+    <div class="middle-header">
+    <p class="header-slogan">Интернет-магазин <br> строительных материалов<br> и инструментов для ремонта</p>
     <div class="header-info">
       <p class="header-phone">+7 (812) 555-05-55</p>
       <p class="header-address">г. Санкт-Петербург, ул Б.Конюшенная, д.19/8</p>
     </div>
     <div class="header-user-block">
-      <a href="#">Войти</a>
-      <a href="#">Регистрация</a>
+      <a href="#" class="btn-enter">Войти</a>
+      <a href="#" class="btn-register">Регистрация</a>
+    </div>
+    </div>
     </div>
   </section>
   <section class="bot-header">
     <nav class="bot-header-menu">
+       <div class="bot-header-list-center">
       <ul class="bot-header-list">
         <li><a href="index.html">Главная</a></li>
         <li><a href="#">Компания</a></li>
@@ -52,31 +55,28 @@
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
+      </div>
     </nav>
   </section>
   </header>
   <main>
   <section class="catalog-banner-grid">
-    <div class="catalog-banner catalog-banner-materials-new">
-      <h3 class="catalog-headline">Материалы</h3>
-      <a href="#" class="catalog-link">На любой вкус</a>
+    <div class="features-center">
+    <div class="features-first">
+      <div class="catalog-banner catalog-banner-materials-new">
+        <h3 class="catalog-headline">Материалы</h3>
+        <a href="#" class="catalog-link">На любой вкус</a>
+      </div>
+      <div class="catalog-banner catalog-banner-tools">
+        <h3 class="catalog-headline">Инструменты</h3>
+        <a href="#" class="catalog-link">На все случаи</a>
+      </div>
+      <div class="catalog-banner catalog-banner-machine">
+        <h3 class="catalog-headline">Техника</h3>
+        <a href="#" class="catalog-link">Для стройки</a>
+      </div>
     </div>
-    <div class="catalog-banner catalog-banner-tools">
-      <h3 class="catalog-headline">Инструменты</h3>
-      <a href="#" class="catalog-link">На все случаи</a>
-    </div>
-    <div class="catalog-banner catalog-banner-machine">
-      <h3 class="catalog-headline">Техника</h3>
-      <a href="#" class="catalog-link">Для стройки</a>
-    </div>
-    <div class="catalog-banner catalog-banner-sales">
-      <h3 class="catalog-headline">Скидки 50%</h3>
-      <a href="#" class="catalog-link">На 350 Товаров</a>
-    </div>
-    <div class="catalog-banner catalog-banner-delivery">
-      <h3 class="catalog-headline">Доставка</h3>
-      <a href="#" class="catalog-link">Бесплатно</a>
-    </div>
+    <div class="features-second">
     <div class="slider">
       <div class="slider-list">
         <div class="slider-tem">
@@ -87,91 +87,106 @@
           </div>
         <a href="drill.html" class="btn-open-catalog">Открыть каталог</a>
         </div>
-        <div class="slider-tem">
-          <div class="slider-item-header">
-            <h3 class="slider-headline">Перфораторы</h3>
-            <p class="slider-text">Настоящие мужские игрушки</p>
-            <img src="img/slider-non-visible.png" alt="drill" width="619" height="267">
+        <div class="slider-item-visually-hidden">
+          <div class="slider-item-header-visually-hidden">
+            <h3 class="slider-headline-visually-hidden">Перфораторы</h3>
+            <p class="slider-text-visually-hidden">Настоящие мужские игрушки</p>
+            <img class="slider-img-visually-hidden" src="img/slider-non-visible.png" alt="drill" width="619" height="267">
           </div>
-          <a href="puncher.html" class="btn-open-catalog">Открыть каталог</a>
+          <a href="puncher.html" class="btn-open-catalog-visually-hidden">Открыть каталог</a>
         </div>
       </div>
-      <div class="slider-controls">
-        <div class="slider-controls-arrows">
-          <a href="#" class="slider-arrow slider-arrow-left"></a>
-          <a href="#" class="slider-arrow slider-arrow-right"></a>
+        <div class="slider-controls">
+          <div class="slider-controls-arrows">
+            <a href="#" class="slider-arrow slider-arrow-left"></a>
+            <a href="#" class="slider-arrow slider-arrow-right"></a>
+          </div>
+          <ul class="slider-controls-dots">
+            <li><a href=""></a></li>
+            <li><a href=""></a></li>
+          </ul>
         </div>
-        <ul class="slider-controls-dots">
-          <li><a href=""></a></li>
-          <li><a href=""></a></li>
-        </ul>
       </div>
-    </div>
+      <div class="catalog-banner catalog-banner-sales">
+        <h3 class="catalog-headline">Скидки 50%</h3>
+        <a href="#" class="catalog-link">На 350 Товаров</a>
+      </div>
+      <div class="catalog-banner catalog-banner-delivery">
+        <h3 class="catalog-headline">Доставка</h3>
+        <a href="#" class="catalog-link">Бесплатно</a>
+      </div>
+     </div>
+     </div>
   </section>
   <section class="bestseller">
     <div class="bestseller-container">
       <h3 class="bestseller-container-headline">Популярные товары</h3>
-      <a href="#" class="bestseller-container-link">Все популярные товары</a>
+      <div class="bestseller-container-link-style">
+        <a href="#" class="bestseller-container-link">Все популярные товары</a>
+      </div>
     </div>
-    <div class="catalog">
-      <div class="catalog-item">
-        <img class="catalog-item-picture" alt="item" src="img/drill1.png" width="214" height="160">
-        <h3 class="catalog-item-headline">Перфоратор BOSCH BFG 9000</h3>
-        <p class="catalog-item-price">32500 P.</p>
-        <a href="#" class="catalog-item-price-new">25500P.</a>
-        <div class="catalog-item-hover">
-          <a href="#" class="visually-hidden-link-buy">Купить</a>
-          <a href="#" class="visually-hidden-link-tab">В закладки</a>
+    <div class="catalog-center">
+      <div class="catalog">
+        <div class="catalog-item">
+          <img class="catalog-item-picture" alt="item" src="img/drill1.png" width="214" height="160">
+          <h3 class="catalog-item-headline">Перфоратор BOSCH <br>BFG 9000</h3>
+          <p class="catalog-item-price">32500 P.</p>
+          <a href="#" class="catalog-item-price-new">25500P.</a>
+          <div class="catalog-item-hover">
+            <a href="#" class="visually-hidden-link-buy">Купить</a>
+            <a href="#" class="visually-hidden-link-tab">В закладки</a>
+          </div>
         </div>
-      </div>
-      <div class="catalog-item">
-        <img class="catalog-item-picture" alt="item" src="img/drill2.png" width="214" height="160">
-        <h3 class="catalog-item-headline">Перфоратор BOSCH BFG 3000</h3>
-        <p class="catalog-item-price">22500 P.</p>
-        <a href="#" class="catalog-item-price-new">15500P.</a>
-        <div class="catalog-item-hover">
-          <a href="#" class="visually-hidden-link-buy">Купить</a>
-          <a href="#" class="visually-hidden-link-tab">В закладки</a>
+        <div class="catalog-item">
+          <img class="catalog-item-picture" alt="item" src="img/drill2.png" width="214" height="160">
+          <h3 class="catalog-item-headline">Перфоратор BOSCH <br>BFG 3000</h3>
+          <p class="catalog-item-price">22500 P.</p>
+          <a href="#" class="catalog-item-price-new">15500P.</a>
+          <div class="catalog-item-hover">
+            <a href="#" class="visually-hidden-link-buy">Купить</a>
+            <a href="#" class="visually-hidden-link-tab">В закладки</a>
+          </div>
         </div>
-      </div>
-      <div class="catalog-item">
-        <img class="catalog-item-picture" alt="item" src="img/drill3.png" width="214" height="160">
-        <h3 class="catalog-item-headline">Перфоратор BOSCH BFG 6000</h3>
-        <p class="catalog-item-price">30500 P.</p>
-        <a href="#" class="catalog-item-price-new">25500P.</a>
-        <div class="catalog-item-hover">
-          <a href="#" class="visually-hidden-link-buy">Купить</a>
-          <a href="#" class="visually-hidden-link-tab">В закладки</a>
+        <div class="catalog-item">
+          <img class="catalog-item-picture" alt="item" src="img/drill3.png" width="214" height="160">
+          <h3 class="catalog-item-headline">Перфоратор BOSCH <br>BFG 6000</h3>
+          <p class="catalog-item-price">30500 P.</p>
+          <a href="#" class="catalog-item-price-new">25500P.</a>
+          <div class="catalog-item-hover">
+            <a href="#" class="visually-hidden-link-buy">Купить</a>
+            <a href="#" class="visually-hidden-link-tab">В закладки</a>
+          </div>
         </div>
-      </div>
-      <div class="catalog-item-new">
-        <img class="catalog-item-picture" alt="item" src="img/drill4.png" width="214" height="160">
-        <h3 class="catalog-item-headline">Перфоратор BOSCH BFG 2000</h3>
-        <p class="catalog-item-price">12500 P.</p>
-        <div class="catalog-item-hover-new">
-          <a href="#" class="visually-hidden-link-buy">Купить</a>
-          <a href="#" class="visually-hidden-link-tab">В закладки</a>
+        <div class="catalog-item-new">
+          <img class="catalog-item-picture" alt="item" src="img/drill4.png" width="214" height="160">
+          <h3 class="catalog-item-headline">Перфоратор BOSCH <br>BFG 2000</h3>
+          <p class="catalog-item-price-visually-hidden">не видно</p>
+          <p class="catalog-item-price-new">12500 P.</p>
+          <div class="catalog-item-hover-new">
+            <a href="#" class="visually-hidden-link-buy">Купить</a>
+            <a href="#" class="visually-hidden-link-tab">В закладки</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
   <section class="producers">
-    <div class="producers-container">
-      <h3 class="producers-container-headline">Популярные производители</h3>
-      <a href="#" class="producers-container-link">Все производители</a>
-    </div>
-    <div class="producers-container-list">
-      <ul class="producers-list">
-        <li class="producers-list-item"><a href="#"><img src="img/bosch.png" alt="item" width="126" height="37"></a></li>
-        <li class="producers-list-item"><a href="#"><img src="img/Makita.png" alt="item" width="123" height="40"></a></li>
-        <li class="producers-list-item"><a href="#"><img src="img/DeWALT.png" alt="item" width="146" height="44"></a></li>
-        <li class="producers-list-item"><a href="#"><img src="img/interskol.png" alt="item" width="184" height="32"></a></li>
-        <li class="producers-list-item"><a href="#"><img src="img/Hitachi.png" alt="item" width="169" height="31"></a></li>
-        <li class="producers-list-item"><a href="#"><img src="img/LG.png" alt="item" width="121" height="73"></a></li>
-        <li class="producers-list-item"><a href="#"><img src="img/AEG.png" alt="item" width="151" height="96" ></a></li>
-        <li class="producers-list-item"><a href="#"><img src="img/Metabo.png" alt="item" width="204" height="69" ></a></li>
-      </ul>
-    </div>
+      <div class="producers-container">
+        <h3 class="producers-container-headline">Популярные производители</h3>
+        <a href="#" class="producers-container-link">Все производители</a>
+      </div>
+      <div class="producers-container-list">
+        <ul class="producers-list">
+          <li class="producers-list-item"><a href="#"><img src="img/bosch.png" alt="item" width="126" height="37"></a></li>
+          <li class="producers-list-item"><a href="#"><img src="img/Makita.png" alt="item" width="123" height="40"></a></li>
+          <li class="producers-list-item"><a href="#"><img src="img/DeWALT.png" alt="item" width="146" height="44"></a></li>
+          <li class="producers-list-item"><a href="#"><img src="img/interskol.png" alt="item" width="184" height="32"></a></li>
+          <li class="producers-list-item"><a href="#"><img src="img/Hitachi.png" alt="item" width="169" height="31"></a></li>
+          <li class="producers-list-item"><a href="#"><img src="img/LG.png" alt="item" width="121" height="73"></a></li>
+          <li class="producers-list-item"><a href="#"><img src="img/AEG.png" alt="item" width="151" height="96" ></a></li>
+          <li class="producers-list-item"><a href="#"><img src="img/Metabo.png" alt="item" width="204" height="69" ></a></li>
+        </ul>
+      </div>
   </section>
   <section class="service">
     <div class="service-container">
