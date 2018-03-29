@@ -902,9 +902,15 @@ font-size:18px;
   text-transform: uppercase;
 }
 
-.paginator-list {
-  list-style: none;
+.category-info {
+  background-color: #f2f6f8;
 }
+
+.puncher-block {
+  width:940px;
+  margin: 0 auto;
+}
+
 
 
 
