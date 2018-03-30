@@ -16,6 +16,11 @@ a {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .header-logo-container {
   width:220px;
   height:45px;
@@ -84,6 +89,7 @@ a {
   padding-top:10px;
   margin-left:0px;
   display:block;
+
 }
 
 .bucket-link {
@@ -93,6 +99,19 @@ a {
   width: 150px;
   height: 45px;
   text-align: center;
+  position: relative;
+}
+
+.bucket-link::before {
+  content: "";
+  width: 26px;
+  height: 21px;
+  background-color: red;
+  position: absolute;
+  left: 5px;
+  background-image: url("img/cart-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .order-container {
@@ -223,7 +242,7 @@ color:#f0515c;
   font-size: 24px;
   line-height: 30px;
   margin-left:20px;
-  margin-top:0;
+  margin-top:20px;;
 }
 
 .catalog-banner {
@@ -254,7 +273,18 @@ background-color: #ffc047;
 }
 
 .catalog-link {
+  display:block;
+  height: 37px;
+  width: 135px;
+  padding-left: 23px;
+  padding-top: 12px;
+}
+
+.catalog-link-container {
+  height: 37px;
+  width: 135px;
   background-color:#e5e5e5;
+  margin-left: 26px;
 }
 
 .catalog-link a:hover {
