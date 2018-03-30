@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i%7CPT+Sans:400,400i&amp;subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 <header class="main-header">
@@ -21,10 +21,10 @@
       </form>
       </div>
     </div>
-      <div class="tab-container backet-tab">
+      <div class="tab-container bucket-tab">
         <a href="#" class="tab-link">Закладки:0</a>
       </div>
-      <div class="backet-container">
+      <div class="bucket-container">
         <a href="#" class="bucket-link">Корзина:0</a>
       </div>
       <div class="order-container backet-tab">
@@ -71,7 +71,10 @@
     <div class="features-first">
       <div class="catalog-banner catalog-banner-materials-new">
         <h3 class="catalog-headline">Материалы</h3>
-        <a href="#" class="catalog-link">На любой вкус</a>
+        <div class="catalog-link-container">
+          <img class="catalog-icon" src="img/icon-1.svg" alt="icon">
+          <a href="#" class="catalog-link">На любой вкус</a>
+        </div>
       </div>
       <div class="catalog-banner catalog-banner-tools">
         <h3 class="catalog-headline">Инструменты</h3>
@@ -169,7 +172,7 @@
         <div class="catalog-item-new">
           <img class="catalog-item-picture" alt="item" src="img-new/drill-fourth.png" width="218" height="159">
           <h3 class="catalog-item-headline">Перфоратор BOSCH <br>BFG 2000</h3>
-          <p class="catalog-item-price-opacity">не видно</p>
+          <p class="catalog-item-price-opacity">-</p>
           <p class="catalog-item-price-new">12500 P.</p>
           <div class="catalog-item-hover-new">
             <a href="#" class="visually-hidden-link-buy">Купить</a>
@@ -188,14 +191,14 @@
       </div>
       <div class="producers-container-list">
         <ul class="producers-list">
-          <li class="producers-list-item"><a href="#"><img src="img/bosch.png" alt="item" width="218" height="143"></a></li>
-          <li class="producers-list-item"><a href="#"><img src="img/Makita.png" alt="item" width="218" height="143"></a></li>
-          <li class="producers-list-item"><a href="#"><img src="img/DeWALT.png" alt="item" width="218" height="143"></a></li>
-           <li class="producers-list-item"><a href="#"><img src="img/inter.jpg" alt="item" width="218" height="143"></a></li>
-          <li class="producers-list-item"><a href="#"><img src="img/Hitachi.png" alt="item" width="218" height="143"></a></li>
-          <li class="producers-list-item"><a href="#"><img src="img/LG.png" alt="item" width="218" height="143"></a></li>
-          <li class="producers-list-item"><a href="#"><img src="img/AEG.png" alt="item" width="218" height="143" ></a></li>
-          <li class="producers-list-item"><a href="#"><img src="img/Metabo.png" alt="item" width="218" height="143" ></a></li>
+          <li class="producers-list-item"><a href="#"><img src="img-1/bosch.png" alt="item" width="218" height="143"></a></li>
+          <li class="producers-list-item"><a href="#"><img src="img-1/Makita.png" alt="item" width="218" height="143"></a></li>
+          <li class="producers-list-item"><a href="#"><img src="img-1/DeWALT.png" alt="item" width="218" height="143"></a></li>
+           <li class="producers-list-item"><a href="#"><img src="img-1/inter.jpg" alt="item" width="218" height="143"></a></li>
+          <li class="producers-list-item"><a href="#"><img src="img-1/Hitachi.png" alt="item" width="218" height="143"></a></li>
+          <li class="producers-list-item"><a href="#"><img src="img-1/LG.png" alt="item" width="218" height="143"></a></li>
+          <li class="producers-list-item"><a href="#"><img src="img-1/AEG.png" alt="item" width="218" height="143" ></a></li>
+          <li class="producers-list-item"><a href="#"><img src="img-1/Metabo.png" alt="item" width="218" height="143" ></a></li>
         </ul>
       </div>
   </section>
@@ -258,7 +261,6 @@
   </section>
   </main>
   <footer class="main-footer">
-  
   <section class="top-footer">
     <div class="top-footer-container">
     <div class="logo-info-container">
