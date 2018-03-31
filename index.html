@@ -70,19 +70,22 @@
     <div class="features">
     <div class="features-first">
       <div class="catalog-banner catalog-banner-materials-new">
-        <h3 class="catalog-headline">Материалы</h3>
-        <div class="catalog-link-container">
-          <img class="catalog-icon" src="img/icon-1.svg" alt="icon">
-          <a href="#" class="catalog-link">На любой вкус</a>
-        </div>
+        <h3 class="catalog-headline catalog-headline-new">Материалы</h3>
+         <div class="catalog-banner-container materials-container">
+           <a href="#" class="catalog-link catalog-icon-first">На любой вкус</a>
+         </div>
       </div>
       <div class="catalog-banner catalog-banner-tools">
         <h3 class="catalog-headline">Инструменты</h3>
-        <a href="#" class="catalog-link">На все случаи</a>
+        <div class="catalog-banner-container tools-container">
+          <a href="#" class="catalog-link catalog-icon-second">На все случаи</a>
+        </div>
       </div>
       <div class="catalog-banner catalog-banner-machine">
         <h3 class="catalog-headline">Техника</h3>
-        <a href="#" class="catalog-link">Для стройки</a>
+        <div class="catalog-banner-container machines-container">
+          <a href="#" class="catalog-link catalog-icon-third">Для стройки</a>
+        </div>
       </div>
     </div>
     <div class="features-second">
@@ -90,8 +93,10 @@
       <div class="slider-list">
         <div class="slider-tem">
           <div class="slider-item-header">
-            <h3 class="slider-headline">Дрели</h3>
-            <p class="slider-text">Соседям на радость!</p>
+            <div class="slider-discription">
+              <h3 class="slider-headline">Дрели</h3>
+              <p class="slider-text">Соседям на радость!</p>
+            </div>
             <img src="img/slider-visible.jpg" alt="drill" width="619" height="267">
           </div>
         <a href="drill.html" class="btn-open-catalog">Открыть каталог</a>
@@ -118,12 +123,16 @@
       </div>
       <div class="features-second-item">
       <div class="catalog-banner catalog-banner-sales">
-        <h3 class="catalog-headline">Скидки 50%</h3>
-        <a href="#" class="catalog-link">На 350 Товаров</a>
+        <h3 class="catalog-headline ">Скидки 50%</h3>
+        <div class="catalog-banner-container sales-container">
+          <a href="#" class="catalog-link catalog-icon-fourth">На 350 Товаров</a>
+        </div>
       </div>
       <div class="catalog-banner catalog-banner-delivery">
-        <h3 class="catalog-headline">Доставка</h3>
-        <a href="#" class="catalog-link">Бесплатно</a>
+        <h3 class="catalog-headline ">Доставка</h3>
+        <div class="catalog-banner-container del-container">
+          <a href="#" class="catalog-link catalog-icon-fifth">Бесплатно</a>
+        </div>
       </div>
       </div>
      </div>
@@ -169,12 +178,12 @@
             <a href="#" class="visually-hidden-link-tab">В закладки</a>
           </div>
         </div>
-        <div class="catalog-item-new">
+        <div class="catalog-item catalog-item-new">
           <img class="catalog-item-picture" alt="item" src="img-new/drill-fourth.png" width="218" height="159">
           <h3 class="catalog-item-headline">Перфоратор BOSCH <br>BFG 2000</h3>
           <p class="catalog-item-price-opacity">-</p>
           <p class="catalog-item-price-new">12500 P.</p>
-          <div class="catalog-item-hover-new">
+          <div class="catalog-item-hover">
             <a href="#" class="visually-hidden-link-buy">Купить</a>
             <a href="#" class="visually-hidden-link-tab">В закладки</a>
           </div>
@@ -191,7 +200,7 @@
       </div>
       <div class="producers-container-list">
         <ul class="producers-list">
-          <li class="producers-list-item"><a href="#"><img src="img-1/bosch.png" alt="item" width="218" height="143"></a></li>
+          <li class="producers-list-item"><a class="producers-list-link" href="#"><img src="img-1/bosch.png" alt="item" width="218" height="143"></a></li>
           <li class="producers-list-item"><a href="#"><img src="img-1/Makita.png" alt="item" width="218" height="143"></a></li>
           <li class="producers-list-item"><a href="#"><img src="img-1/DeWALT.png" alt="item" width="218" height="143"></a></li>
            <li class="producers-list-item"><a href="#"><img src="img-1/inter.jpg" alt="item" width="218" height="143"></a></li>
@@ -208,17 +217,16 @@
       <h3 class="service-headline">Сервисы</h3>
       <p class="service-text">Хороший интернет-магазин отличается от плохого не только ценами! <br>Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
     </div>
-    <div class="service-tab">
+    <div class="service-container-flex">
       <ul class="service-list">
         <li><button class="service-button">Доставка</button></li>
         <li><button class="service-button">Гарантия</button></li>
         <li><button class="service-button">Кредит</button></li>
       </ul>
-    </div>
     <div class="services-discription">
       <div class="services-tab-item service-tab-item-active">
         <h3 class="delivery-headline">Доставка</h3>
-        <p class="delivery-text">Мы с удовольствием дсотавим ваш товар прямо<br> к вашему подьезду совершенно бесплатно! <br> Ведь мы неплохо заработаем, <br> поднимая его на ваш этаж!</p>
+        <p class="delivery-text">Мы с удовольствием доcтавим ваш товар прямо<br> к вашему подьезду совершенно бесплатно! <br> Ведь мы неплохо заработаем, <br> поднимая его на ваш этаж!</p>
         <img src="img/service1.png" alt="item" class="delivery-image">
       </div>
       <div class="services-tab-item">
@@ -232,6 +240,7 @@
           <img src="img/service.png" alt="item" class="credit-image">
           <a href="#" class="credit-link">Отправить заявку</a>
       </div>
+    </div>
     </div>
     </div>
   </section>
