@@ -43,7 +43,7 @@ img {
 }
 
 .header-search input {
-  height: 40px;
+  height: 45px;
   padding-left: 40px;
   font-size: 17px;
   border: none;
@@ -131,7 +131,7 @@ img {
 .bucket-link-new {
   display: block;
   width: 150px;
-  height: 42px;
+  height: 45px;
   background-color: #ee3643;
   margin-right: 0;
 }
@@ -193,6 +193,87 @@ img {
 .middle-header-center {
   background-color: #f3f7f8;
 }
+
+/*middle header catalog*/
+
+.user-container {
+  display: flex;
+  width: 300px;
+  height: 72px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.user {
+  display: block;
+  width: 299px;
+  height: 47px;
+  background-color: #ffffff;
+  padding: 14px 68px 14px 47px;
+  color: #000000;
+  position: relative;
+}
+
+.user::before {
+  content: "";
+  position: absolute;
+  top:12px;
+  left:10px;
+  width: 20px;
+  height: 18px;
+  background-image: url("../img/icon-user.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  color: #c5c5c5;
+}
+
+.user::after {
+  content: "";
+  position: absolute;
+  top:13px;
+  left:270px;
+  width: 20px;
+  height: 17px;
+  background-image: url("../img/icon-logout.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  color: #c5c5c5;
+}
+
+.my-orders {
+  display: block;
+  margin-left: 16px;
+}
+
+.personal-area {
+  display: block;
+  margin-right: 70px;
+  position: relative;
+  
+}
+
+.personal-area::before {
+  content: "";
+  position: absolute;
+  top:5px;
+  left: -15px;
+  width: 4px;
+  height: 5px;
+  background-image: url("../img/punkt.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  color: #c5c5c5;
+}
+
+
+.my-orders,
+.personal-area {
+  color: #32425c;
+  margin-top: 9px;
+  text-decoration: underline;
+}
+
+/*middle header catalog end*/
 
 .header-slogan {
   font-style: italic;
@@ -634,7 +715,7 @@ display:none;
   width:0;
   height:0;
   border:20px solid white;
-  border-left-color:#ee3643;
+
 }
 
 .catalog-item,
@@ -642,15 +723,18 @@ display:none;
   display:block;
   width: 220px;
   height:320px;
+  margin-top: 20px;
+  position: relative;
+  margin-left: 0px;
+  margin-right: 20px;
 }
 
-.catalog-item-new {
-  position: relative;
+.catalog-item:nth-child(3),
+.catalog-item:nth-child(6),
+.catalog-item:nth-child(9) {
+  margin-right: 0px;
 }
 
-.catalog-item {
-  position: relative;
-}
 
 .catalog-item-new::after {
   content: "";
@@ -894,16 +978,20 @@ padding:0;
   margin-top:40px;
 }
 
-.company-info-list {
+.company-list-item {
   position: relative;
+  display:block;
+  margin-top: 25px;
 }
 
-.company-info-list::before {
+.company-list-item::before {
   content: "";
   height: 2px;
-  width: 5px;
+  width: 25px;
   background-color: red;
   position: absolute;
+  left: -37px;
+  top: 8px;
 }
 
 .catalog-link-first {
@@ -1170,17 +1258,56 @@ font-size:18px;
   color:black;
 }
 
+/* хлебные крошки */
+
 .breadcrumbs-link-catalog {
   margin-left:54px;
+  display:block;
+  position: relative;
 }
 
 .breadcrumbs-link-tool {
   margin-left:40px;
+  display:block
 }
 
 .breadcrumbs-link-perforator {
   margin-left: 43px;
+  display:block
 }
+
+.breadcrumbs-link {
+  display: block;
+  position: relative;
+}
+
+.breadcrumbs-link::before {
+  content: "";
+  width: 8px;
+  height: 12px;
+  position: absolute;
+  left:-19px;
+  top:3px;
+  background-image: url("../img/icon-right-breadcrumbs.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.breadcrumbs-link-catalog::before {
+  content: "";
+  width: 14px;
+  height: 12px;
+  position: absolute;
+  left:-40px;
+  top:2px;
+  background-image: url("../img/icon-home.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+
+
+/* end */
 
 .catalog-header {
   font-size: 30px;
@@ -1246,6 +1373,10 @@ font-size:18px;
   text-transform: uppercase;
 }
 
+.checkbox {
+  background-color: #c5c5c5;
+}
+
 .filter-radio {
   font-size: 15px;
   line-height: 20px;
@@ -1276,14 +1407,16 @@ font-size:18px;
   justify-content: space-between;
 }
 
-.sort-link-first,
-.sort-link-second,
-.sort-link-third 
+.sort-link-first ,
+.sort-link-second ,
+.sort-link-third
 {
   padding-top:10px;
   color: #acaaa5;
+  display:inline;
   border-bottom: 1px dotted #ee3643;
 }
+
 
 .sort-link-third {
   margin-right:46px;
@@ -1319,6 +1452,13 @@ font-size:18px;
   margin-left: 10px;
 }
 
+.pagination-item-next {
+  display: block;
+  width: 138px;
+  height: 38px;
+  padding-bottom: 13px;
+}
+
 .pagination-item-current {
   background-color: red;
   color: white;
@@ -1352,6 +1492,258 @@ font-size:18px;
 }
 
 
+/* filters */
+
+.filters {
+  width: 220px;
+  margin-right: 20px;
+}
+
+.filters fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.filters fieldset:first-of-type {
+  margin-bottom: 26px;
+}
+
+.filters fieldset:last-of-type {
+  margin-bottom: 60px;
+}
+
+.h3-filter {
+  display: flex;
+  align-items: center;
+  width: 220px;
+  min-height: 38px;
+  margin-bottom: 10px;
+  background-color: #f7f3ec;
+  border-radius: 3px;
+}
+
+.h3-filter h3 {
+  margin: 0;
+  padding: 0;
+  margin-left: 19px;
+}
+
+.filters legend {
+  margin-top: 12px;
+  margin-bottom: 13px;
+}
+
+.filters ul {
+  margin: 0;
+  padding: 0;
+}
+
+.sort p,
+.sort ul,
+.sort a {
+  margin: 0;
+  padding: 0;
+}
+
+.filters,
+.sort,
+.sort a,
+.filter-button {
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.h3-filter h3,
+.sort p,
+.sort a,
+.filter-button {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.price-range {
+  position: relative;
+  width: 220px;
+  height: 80px;
+  margin-bottom: 9px;
+  background-color: #f7f3ec;
+  border-radius: 0 0 3px 3px;
+}
+
+.price-range .round-button {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.price-range .left-round-button {
+  top: 30px;
+  left: 20px;
+  background-image: url("../img/filter-button.svg");
+}
+
+.price-range .green-line {
+  position: absolute;
+  top: 39px;
+  left: 40px;
+  width: 120px;
+  height: 2px;
+  background-color: #00ca74;
+}
+
+.price-range .right-round-button {
+  top: 30px;
+  right: 37px;
+  background-image: url("../img/filter-button.svg");
+}
+
+.price-range .grey-line {
+  position: absolute;
+  top: 39px;
+  right: 20px;
+  width: 20px;
+  height: 2px;
+  background-color: #d7dcde;
+}
+
+.min-max-numbers {
+  display: flex;
+  justify-content: space-between;
+}
+
+.min-value input,
+.max-value input {
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 95px;
+  height: 38px;
+  background-color: #f7f3ec;
+  border: none;
+  border-radius: 2px;
+}
+
+.dash {
+  align-self: center;
+  width: 10px;
+  height: 1px;
+  background-color: #000000;
+}
+
+input[type='number'] {
+  -moz-appearance:textfield;
+  cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.price-legend,
+.producers-legend,
+.charging-legend {
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 30px;
+}
+
+.producers-filter {
+  margin-top: 10px;
+}
+
+.producers-filter .producers-legend {
+  padding-top: 5px;
+}
+
+.charging-type .charging-legend {
+  padding-top: 8px;
+}
+
+.producers-filter ul li:last-child {
+  margin-bottom: 15px;
+}
+
+.filter-option {
+  margin-bottom: 20px;
+  padding-left: 34px;
+}
+
+.filter-option label {
+  position: relative;
+  display: block;
+  font-size: 15px;
+  line-height: 20px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 0;
+  width: 26px;
+  height: 25px;
+  background-image: url("../img/checkbox-producers-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.35;
+}
+
+.filter-input-checkbox:checked + label::before {
+  background-image: url("../img/checkbox-producers-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-checkbox + label:hover::before,
+.filter-input-checkbox + label:focus::before,
+.filter-input-checkbox:checked + label:hover::before,
+.filter-input-checkbox:checked + label:focus::before {
+  opacity: 0.5;
+}
+
+.filter-input-radio + label::before {
+  content: "";
+  position: absolute;
+  left: -35px;
+  top: 0;
+  width: 25px;
+  height: 26px;
+  background-image: url("../img/radio-charge-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  opacity: 0.35;
+}
+
+.filter-input-radio:checked + label::before {
+  background-image: url("../img/radio-charge-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.filter-input-radio + label:hover::before,
+.filter-input-radio + label:focus::before,
+.filter-input-radio:checked + label:hover::before,
+.filter-input-radio:checked + label:focus::before {
+  opacity: 0.5;
+}
+
+.filter-button {
+  padding: 9px 38px;
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 2px;
+  cursor: pointer;
+}
 
 
 
