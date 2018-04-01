@@ -932,7 +932,7 @@ margin-top: 20px;
 }
 
 .service-text {
-  padding-bottom: 77px;
+  padding-bottom: 61px;
   margin-bottom: 0px;
   font-size: 14px;
   font-weight: 400;
@@ -980,14 +980,37 @@ margin-top: 20px;
   position: relative;
 }
 
+.service-button-first {
+  width: 240px;
+  height: 62px;
+  color: #32425c;
+  background-color: #ffffff;
+  border: 1px solid #4e637c;
+  text-align: left;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 30px;
+  padding-left:24px;
+}
+
 .service-button {
   width: 240px;
   height: 62px;
   background-color: #32425c;
   color: #ffffff;
   border: 1px solid #4e637c;
-
+  text-align: left;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 30px;
+  padding-left:24px;
 }
+
+.service-button-first {
+  background-color: #ffffffö
+}
+
+
 
 .service-wrapper {
   width: 940px;
