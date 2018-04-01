@@ -425,10 +425,11 @@ img {
   color: white;
   font-size: 24px;
   line-height: 30px;
-  margin-left: 20px;
+  margin-left: 0px;
   margin-top: 0px;
   padding-top: 20px;
   position: relative;
+  padding-left: 25px;
 }
 
 .catalog-headline-new {
@@ -454,6 +455,10 @@ img {
   margin-bottom: 20px;
 }
 
+.catalog-banner-container {
+  padding-left: 22px;
+}
+
 .catalog-link {
   height: 12px;
   color: #ffffff;
@@ -461,8 +466,10 @@ img {
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-  background-color: 0, 0, 0, 0.1;
+  background-color: rgba(0, 0, 0, 0.1);
   padding: 12px 24px 14px 24px;
+  border-radius: 3px;
+  position: relative;
 }
 
 .catalog-banner-materials-new {
@@ -518,7 +525,7 @@ img {
   height: 61px;
   position: absolute;
   right: -120px;
-  top: -35px;
+  top: -30px;
   background-image: url("../img/icon-2.png");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -529,7 +536,7 @@ img {
   width: 78px;
   height: 62px;
   position: absolute;
-  right: -120px;
+  right: -122px;
   top: -35px;
   background-image: url("../img/icon-3.png");
   background-repeat: no-repeat;
@@ -542,7 +549,7 @@ img {
   width: 59px;
   height: 72px;
   position: absolute;
-  right: -110px;
+  right: -98px;
   top: -40px;
   background-image: url("../img/icon-4.png");
   background-repeat: no-repeat;
@@ -554,7 +561,7 @@ img {
   width: 78px;
   height: 63px;
   position: absolute;
-  right: -120px;
+  right: -135px;
   top: -40px;
   background-image: url("../img/icon-5.png");
   background-repeat: no-repeat;
@@ -575,16 +582,21 @@ img {
 }
 
 .btn-open-catalog {
+  color: #ffffff;
+  font-family: Cuprum;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
   background-color: #ee3643;
+  padding-top: 14px;
+  padding-right: 45px;
+  padding-bottom: 14px;
+  padding-left: 45px;
+  border-radius: 3px;
   position: absolute;
-  display: block;
-  width: 195px;
-  height: 38px;
-  color: white;
-  padding-left: 50px;
-  padding-top: 12px;
-  top: 205px;
-  left: 25px;
+  left: 20px;
+  bottom: 20px;
 }
 
 .btn-open-catalog a:hover {
@@ -600,7 +612,7 @@ img {
   line-height: 24px;
   color: white;
   margin: 0px;
-  padding-left: 20px;
+  padding-left: 24px;
 }
 
 .slider-headline {
@@ -608,8 +620,9 @@ img {
   line-height: 36px;
   color: white;
   margin: 0px;
-  padding-top: 26px;
-  padding-left: 20px;
+  padding-top: 20px;
+  padding-left: 25px;
+  text-transform: uppercase;
 }
 
 .slider-item {
@@ -667,24 +680,25 @@ img {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+
 }
 
 .bestseller-container-link,
 .producers-container-link {
+  color: #ffffff;
   font-size: 14px;
+  font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
   background-color: #ee3643;
-  color: white;
-  display: block;
-  width: 247px;
-  height: 37px;
+  padding: 14px 55px;
+  border-radius: 3px;
+  display:block;
   text-align: center;
-  padding-top: 10px;
 }
 
 .bestseller-container-link-style {
-  margin-top: 20px;
+  margin-top: 25px;
   margin-right: 24px;
   width: 254px;
   height: 39px;
@@ -700,6 +714,7 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+
 
 .catalog-item,
 .catalog-item-new {
@@ -785,6 +800,7 @@ img {
   background-position: 0 0;
 }
 
+
 /* ссылки в карточках товара */
 
 .visually-hidden-link-buy,
@@ -842,10 +858,7 @@ img {
   display: block;
   width: 220px;
   height: 145px;
-  width: 220px;
-  height: 145px;
   text-align: center;
-  margin-bottom: 20px;
 }
 
 .producers-list-link {
@@ -861,7 +874,7 @@ img {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
-  margin-left: 40px;
+  margin-left: 24px;
 }
 
 .producers-container {
@@ -881,6 +894,8 @@ img {
 
 .producers-list {
   padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .service {
@@ -1041,6 +1056,7 @@ img {
   padding: 10px;
   text-align: center;
   margin-top: 40px;
+  position: relative;
 }
 
 .footer-info p {
@@ -1165,16 +1181,13 @@ img {
   margin: 0 auto;
 }
 
-h3.catalog-headline.catalog-headline-new {
-  margin-left: 27px;
-}
-
 .catalog {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 940px;
   margin: 20px auto;
+  margin-top: 0;
 }
 
 .producers-container-list {
@@ -1194,6 +1207,7 @@ h3.catalog-headline.catalog-headline-new {
 .bestseller-container {
   display: flex;
   justify-content: space-between;
+  margin-top: 25px;
 }
 
 .producers-container {
