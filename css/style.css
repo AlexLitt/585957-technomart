@@ -197,7 +197,7 @@ img {
 }
 
 .header-phone {
-  text-align:center;
+  text-align: center;
   border: 3px solid white;
   display: block;
   width: 264px;
@@ -331,21 +331,10 @@ img {
   padding-bottom: 60px;
 }
 
-.bot-header-menu {
-  display: flex;
-  background-color: #32425c;
-  width: 940px;
-  margin: 0 auto;
-}
 
 .bot-header-list li {
   list-style: none;
   padding: 20px;
-}
-
-.bot-header-list-center {
-  width: 940px;
-  margin: 0 auto;
 }
 
 
@@ -361,11 +350,51 @@ img {
   background-color: #f3f7f8;
 }
 
+.bot-menu {
+  width: 940px;
+  margin: 0 auto;
+}
+
 .bot-header-list a {
   font-size: 17px;
   line-height: 17px;
   color: #d6d9de;
 }
+
+.main-nav {
+  background: #32425c;
+  box-shadow: inset 0 -5px 0 #293449;
+  padding-left: 23px;
+  padding-right: 23px;
+  margin-top: 100px;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation-list-item a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 17px;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 23px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.navigation-list-item a:hover {
+  background: #28334a;
+}
+
+
 
 .header-user-block {
   padding-bottom: 8px;
@@ -414,7 +443,7 @@ img {
   height: 21px;
   position: absolute;
   left: 12px;
-  top:11px;
+  top: 11px;
   background-image: url("../img/icon-login.png");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -457,19 +486,24 @@ img {
 
 .catalog-banner-container {
   padding-left: 22px;
+  width: 135px;
+  height: 38px;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin-left:20px;
+  text-align:center;
+  margin-bottom: 20px;
 }
 
 .catalog-link {
-  height: 12px;
   color: #ffffff;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
   background-color: rgba(0, 0, 0, 0.1);
-  padding: 12px 24px 14px 24px;
   border-radius: 3px;
   position: relative;
+  text-align:center;
 }
 
 .catalog-banner-materials-new {
@@ -502,7 +536,7 @@ img {
   font-weight: 400;
   line-height: 18px;
   text-transform: uppercase;
-  background: rgba(0 , 0, 0 , 0.16);
+  background: rgba(0, 0, 0, 0.16);
   padding: 12px 24px 14px 24px;
   border-radius: 3px;
 }
@@ -693,7 +727,7 @@ img {
   background-color: #ee3643;
   padding: 14px 55px;
   border-radius: 3px;
-  display:block;
+  display: block;
   text-align: center;
 }
 
@@ -902,7 +936,7 @@ img {
 }
 
 .producers-list-container {
-margin-top: 20px;
+  margin-top: 20px;
 }
 
 .service {
@@ -934,17 +968,36 @@ margin-top: 20px;
 .service-text {
   padding-bottom: 61px;
   margin-bottom: 0px;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 13px;
   line-height: 24px;
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 13px;
+  font-weight: 400;
 }
 
-.delivery-headline{
+.delivery-headline {
   color: #32425c;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
   text-transform: uppercase;
+}
+
+.delivery-text {
+  padding-top:13px;
+  font-family: "PT Sans";
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.catalog-item-index:nth-child(3) {
+  margin-right: 20px;
+}
+
+.catalog-item-index:nth-child(4) {
+  margin-right: 0px;
 }
 
 
@@ -967,7 +1020,6 @@ margin-top: 20px;
   margin-left: 78px;
 }
 
-.service-tab-item-active {}
 
 .services-discription {
   display: flex;
@@ -985,12 +1037,12 @@ margin-top: 20px;
   height: 62px;
   color: #32425c;
   background-color: #ffffff;
-  border: 1px solid #4e637c;
+  border: 1px solid #ffffff;
   text-align: left;
   font-size: 21px;
   font-weight: 700;
   line-height: 30px;
-  padding-left:24px;
+  padding-left: 24px;
 }
 
 .service-button {
@@ -1003,7 +1055,7 @@ margin-top: 20px;
   font-size: 21px;
   font-weight: 700;
   line-height: 30px;
-  padding-left:24px;
+  padding-left: 24px;
 }
 
 .service-button-first {
@@ -1055,8 +1107,12 @@ margin-top: 20px;
 }
 
 .company-info-text {
-  font-size: 13px;
+  padding-bottom:0px;
   line-height: 24px;
+  color: #000000;
+  font-family: "PT Sans";
+  font-size: 13px;
+  font-weight: 400;
 }
 
 .company-info-link {
@@ -1188,7 +1244,6 @@ margin-top: 20px;
   display: flex;
   justify-content: space-between;
   width: 900px;
-  ;
   margin: auto;
   height: 60px;
   text-align: center;
@@ -1279,7 +1334,7 @@ margin-top: 20px;
   width: 468px;
   height: 261px;
   position: absolute;
-  left: 220px;
+  left: 230px;
   top: 25px;
   background-image: url("../img/service-img.png");
   background-repeat: no-repeat;
