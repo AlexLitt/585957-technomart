@@ -373,6 +373,14 @@ img {
   margin-top: 24px;
 }
 
+.header-user-block .btn-enter {
+  padding-bottom: 13px;
+}
+
+.header-user-block .btn-register {
+  padding-bottom: 13px;
+}
+
 .header-user-block a {
   font-size: 21px;
   line-height: 21px;
@@ -405,7 +413,7 @@ img {
   width: 26px;
   height: 21px;
   position: absolute;
-  left: 39px;
+  left: 12px;
   top:11px;
   background-image: url("../img/icon-login.png");
   background-repeat: no-repeat;
@@ -446,6 +454,17 @@ img {
   margin-bottom: 20px;
 }
 
+.catalog-link {
+  height: 12px;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: 0, 0, 0, 0.1;
+  padding: 12px 24px 14px 24px;
+}
+
 .catalog-banner-materials-new {
   background-color: #ffbf47;
 }
@@ -466,33 +485,6 @@ img {
   background-color: #ffc047;
 }
 
-.catalog-banner-container {
-  width: 135px;
-  height: 38px;
-  margin-left: 25px;
-  margin-bottom: 24px;
-  padding: 10px;
-}
-
-.materials-container {
-  background-color: #e5ac40;
-}
-
-.tools-container {
-  background-color: #35a9cc;
-}
-
-.machines-container {
-  background-color: #c682c2;
-}
-
-.sales-container {
-  background-color: #80c180;
-}
-
-.del-container {
-  background-color: #e5ac40;
-}
 
 /* иконки блоков */
 
@@ -1152,7 +1144,7 @@ img {
 }
 
 .features {
-  margin-top: 45px;
+  margin-top: 58px;
 }
 
 .features-first {
